@@ -1,10 +1,11 @@
-# PostInstall-WindowsLTSC
+# WinPrep
 > [!WARNING]
 > Review the script's code before running.
 
-This script applies changes I make to fresh Windows LTSC installs + offers to run [CutEdge](https://github.com/azhcat/CutEdge).
+This script applies changes I make to fresh Windows installs + offers to run [CutEdge](https://github.com/azhcat/CutEdge).
 
 ## Explanation of what each change does
+### These apply for LTSC and GAC
 | Registry Key/Value | Setting | Description |
 |--------------------|---------|-------------|
 | JPEGImportQuality | 100 | Sets JPEG wallpaper quality to 100% (prevents compression) |
@@ -38,3 +39,31 @@ This script applies changes I make to fresh Windows LTSC installs + offers to ru
 | AllowGameDVR | 0 | Disables Game Recording and Broadcasting |
 | HideRecentlyAddedApps | 1 | Hides recently added apps in Start menu |
 | Start_TrackDocs | 0 | Disables document tracking for Start menu |
+| EnableAccountNotifications | 0 | Disables account-related notifications |
+| DisableSpotlightCollectionOnDesktop | 1 | Disables Windows Spotlight image collection on the desktop background |
+| DisableSoftLanding | 1 | Disables the "Soft Landing" first-run experience and tips in Windows |
+
+### These apply only for GAC
+| Registry Key/Value | Setting | Description |
+|--------------------|---------|-------------|
+| ContentDeliveryAllowed | 0 | Disables all content delivery features from Microsoft |
+| SubscribedContentEnabled | 0 | Disables subscribed content |
+| OemPreInstalledAppsEnabled | 0 | Disables installation of OEM preinstalled apps for the user |
+| PreInstalledAppsEnabled | 0 | Disables installation of Microsoft preinstalled apps for the user |
+| PreInstalledAppsEverEnabled | 0 | Indicates preinstalled apps have never been enabled for the user |
+| SilentInstalledAppsEnabled | 0 | Disables silent installation of apps suggested by Microsoft |
+| SubscribedContent-310093Enabled | 0 | Disables specific subscribed content (ID 310093) from showing |
+| SubscribedContent-338393Enabled | 0 | Disables specific subscribed content (ID 338393) from showing |
+| SubscribedContent-353694Enabled | 0 | Disables specific subscribed content (ID 353694) from showing |
+| SubscribedContent-353696Enabled | 0 | Disables specific subscribed content (ID 353696) from showing |
+| SystemPaneSuggestionsEnabled | 0 | Disables suggestions in the Start menu and system panes |
+| SubscribedContent-338387Enabled | 0 | Disables specific subscribed content (ID 338387) from showing |
+| RotatingLockScreenOverlayEnabled | 0 | Disables fun facts, tips, and more overlays on the lock screen |
+| SubscribedContent-338388Enabled | 0 | Disables specific subscribed content (ID 338388) from showing |
+| SubscribedContent-338389Enabled | 0 | Disables specific subscribed content (ID 338389) from showing |
+| SoftLandingEnabled | 0 | Disables the "Soft Landing" first-run experience and tips |
+| DisableWindowsSpotlightFeatures | 1 | Disables all Windows Spotlight features on lock screen and elsewhere |
+| DisableWindowsSpotlightWindowsWelcomeExperience | 1 | Disables Windows Spotlight suggestions in the Welcome experience |
+| DisableWindowsSpotlightOnActionCenter | 1 | Disables Windows Spotlight suggestions in the Action Center |
+| DisableWindowsSpotlightOnSettings | 1 | Disables Windows Spotlight suggestions in the Settings app |
+| DisableThirdPartySuggestions | 1 | Disables third-party app suggestions from Microsoft |
