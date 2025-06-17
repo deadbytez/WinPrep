@@ -4,6 +4,9 @@
 
 This script applies changes I make to fresh Windows installs + offers to run [CutEdge](https://github.com/azhcat/CutEdge).
 
+<img src="https://github.com/user-attachments/assets/b7a8c94b-05cb-42cf-9e4f-70e1666f14d4" alt="WinPrep script preview image" width="75%">
+
+
 ## Explanation of what each change does
 ### These apply for LTSC and GAC
 | Registry Key/Value | Setting | Description |
