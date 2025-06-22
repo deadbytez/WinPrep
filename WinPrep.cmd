@@ -1,10 +1,10 @@
 @echo off
-title WinPrep v1.1
+title WinPrep v1.11
 color 4E
 
 :MAINMENU
 cls
-echo / WinPrep v1.1                                                \
+echo / WinPrep v1.11                                               \
 echo / Changes I apply on fresh installs of Windows in one script. \
 echo / Repo: https://github.com/azhcat/WinPrep                     \
 echo.
@@ -132,7 +132,7 @@ if /I "%cutedge%"=="Y" (
     goto CUTEDGE
 )
 cls
-title WinPrep v1.1
+title WinPrep v1.11
 color 4E
 echo. Done! Please restart your computer.
 pause
