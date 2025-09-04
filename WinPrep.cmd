@@ -6,7 +6,7 @@ color 4E
 cls
 echo / WinPrep v1.12                                               \
 echo / Changes I apply on fresh installs of Windows in one script. \
-echo / Repo: https://github.com/aNamelessFox/WinPrep               \
+echo / Repo: https://github.com/deadbytez/WinPrep                  \
 echo.
 echo WARNING
 echo ----------------------------------------------------------
@@ -137,3 +137,4 @@ color 4E
 echo. Done! Please restart your computer.
 pause
 goto MAINMENU
+
